@@ -109,19 +109,25 @@
 
 						<form method="POST" action="product-single.php?id=<?php echo $id; ?>">
 							<div class="row mt-4">
-							<div class="col-md-6">
-								<div class="form-group d-flex">
-								<div class="select-wrap">
-								<div class="icon"><span class="ion-ios-arrow-down"></span></div>
-								<select name="" id="" class="form-control">
-									<option value="">Small</option>
-									<option value="">Medium</option>
-									<option value="">Large</option>
-									<option value="">Extra Large</option>
-								</select>
+							<?php //if ($singleProduct->type != 'coffee') : ?>
+								<!-- No dropdown for non-coffee 
+							<?php //else : ?>
+								<div class="col-md-6">
+									<div class="form-group d-flex">
+										<div class="select-wrap">
+											<div class="icon"><span class="ion-ios-arrow-down"></span></div>
+											<select name="" id="" class="form-control">
+												<option value="">Small</option>
+												<option value="">Medium</option>
+												<option value="">Large</option>
+												<option value="">Extra Large</option>
+											</select>
+										</div>
+									</div>
 								</div>
-							</div>
-							</div>
+							<?php //endif; ?> -->
+
+						
 								<div class="w-100"></div>
 								<div class="input-group col-md-6 d-flex mb-3">
 						<span class="input-group-btn mr-2">
@@ -130,14 +136,14 @@
 							</button>
 							</span>
 				
-						<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+						<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100" readonly>
 						<span class="input-group-btn ml-2">
 							<button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
 							<i class="icon-plus"></i>
 						</button>
 						</span>
-					</div>
-				</div>
+								</div>
+						</div>
 				
 					<input name="name" value="<?php echo $singleProduct->name; ?>" type="hidden">
 					<input name="image" value="<?php echo $singleProduct->image; ?>" type="hidden">
