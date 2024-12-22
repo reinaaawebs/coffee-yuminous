@@ -57,8 +57,8 @@
 	    				<div class="col-md-4 d-flex ftco-animate">
 	    					<div class="icon"><span class="icon-clock-o"></span></div>
 	    					<div class="text">
-	    						<h3>Open Monday-Friday</h3>
-	    						<p>8:00am - 9:00pm</p>
+	    						<h3>Anytime Is Coffee Time</h3>
+	    						<p>Coffee’s on us 24/7, so you can start your day whenever you like.</p>
 	    					</div>
 	    				</div>
 	    			</div>
